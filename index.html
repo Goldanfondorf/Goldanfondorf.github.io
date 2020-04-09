@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .rect {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        text-align: center;
+        font-size: 30px;
+        vertical-align: middle;
+        line-height: 200px;
+        border: 5px solid gold;
+        }
+        .rect:hover {
+        animation-name: mykeyframe;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+        }
+
+        @keyframes mykeyframe {
+        0% {
+            background-color: red;
+            transform: rotate(0);
+        }
+        30% {
+            background-color: khaki;
+            transform: rotate(350deg) translate(300px, 100px);
+            transform-origin: 400px 200px;
+        }
+        50% {
+            border-radius: 50%;
+        }
+        80% {
+            background-color: mediumblue;
+            transform: rotate(170deg) translate(400px, 200px);
+            transform-origin: 600px 300px;
+        }
+        100% {
+            background-color: green;
+            transform: rotate(360deg) translate(100px, 500px);
+            transform-origin: 200px 600px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="rect">Hello</div>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem similique eligendi beatae quo, ratione officiis quae ipsa fugiat rem, explicabo, ab iste! Dolor accusamus, quia enim a perspiciatis cum architecto sapiente ipsam illo odit temporibus error magni expedita fugit voluptatem optio beatae! Pariatur vel consequuntur eum praesentium in, doloribus, autem facere unde fugiat incidunt aspernatur labore aliquam porro, blanditiis rem temporibus deserunt sit dolores illum quos at debitis? Tempore cupiditate et accusamus, minus aliquam illo sapiente perferendis, rem eum consequuntur quia rerum quam atque. Cum, harum minus voluptates est dolore molestiae repellendus nemo fuga ex animi iste numquam voluptas quos!</p>
+</body>
+</html>
